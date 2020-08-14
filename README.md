@@ -18,6 +18,9 @@
 - system-down: Bajar imágen
 - system-install: Instalar imágen.<br/>
 
-*Imagenes de prueba*
-<img src="/others/1.png" /><br/>
+### Imagenes de prueba:
+*PaneL principal*
+<img src="/others/1.png" />
+<br/>
+*Resultados*
 <img src="/others/2.png" /><br/>
