@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% for itm in result %}
+    <div class="row">
+      <div class="col-3">
+          <h5>Operaciones:</h5>
+      </div>
+      <div class="col-9">
+          <p>{{ itm.Titulo }}. {{ itm.SubTitulo }}.</p>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-3">
+          <h5>TMC:</h5>
+      </div>
+      <div class="col-9">
+          <p>{{ itm.Valor }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <h5>Periodo:</h5>
+      </div>
+      <div class="col-9">
+        <p> {{ itm.Fecha }}
+          {% if itm.Hasta %}
+            hasta el {{itm.Hasta}}
+          {% endif %}</p>
+      </div>
+    </div>
+    <hr/>
+  {% endfor %}
+
+
+
+{% endblock %}

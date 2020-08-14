@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post">
+  {% csrf_token %}
+  <div class="row">
+    <div class="col-6">
+      {{ form.amount.label_tag}}
+      <br />
+      {{ form.amount}}
+    </div>
+    <div class="col-6">
+      {{ form.timer.label_tag}}
+      <br />
+      {{ form.timer}}
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-6">
+      {{ form.tmc_date.label_tag}}
+      <br />
+      {{ form.tmc_date }}
+    </div>
+
+
+  </div>
+  <div class="row">
+    <div class="col-6"></div>
+    <div class="col-6">
+      <button style="float: right;" type="submit" class="btn btn-success">Calcular</button>
+    </div>
+
+  </div>
+  </div>
+
+</form>
+{% endblock %}
